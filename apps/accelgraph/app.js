@@ -12,9 +12,9 @@ function getY(v) {
 Bangle.on('accel', a => {
   g.reset();
   if (last) {
-    g.setColor("#ff0000").drawLine(x-1,getY(last.x),x,getY(a.x));
-    g.setColor("#00ff00").drawLine(x-1,getY(last.y),x,getY(a.y));
-    g.setColor("#0000ff").drawLine(x-1,getY(last.z),x,getY(a.z));
+    g.setColor("#f00").drawLine(x-1,getY(last.x),x,getY(a.x));
+    g.setColor("#0f0").drawLine(x-1,getY(last.y),x,getY(a.y));
+    g.setColor("#00f").drawLine(x-1,getY(last.z),x,getY(a.z));
   }
   last = a;x++;
   if (x>=g.getWidth()) {
